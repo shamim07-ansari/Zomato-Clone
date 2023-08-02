@@ -1,0 +1,76 @@
+.localities .title {
+    font-size: 3.6rem;
+    font-weight: 200;
+    margin: 0px;
+    color: rgb(54, 54, 54);
+    margin-bottom: 4rem;
+}
+
+.localities .title .city {
+    font-weight: 600;
+}
+
+.localities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+.locality {
+    padding: 1.2rem 1.5rem;
+    border-radius: 0.8rem;
+    background: rgb(red, green, blue);
+    border: 1px solid rgb(232, 232, 232);
+    margin-bottom: 0.5rem;
+    width: 30%;
+    font-size: 1.6rem;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.locality-title {
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(28, 28, 28);
+    margin: 0px 0px 0.5rem;
+}
+
+.locality .places {
+    font-size: inherit;
+    color: rgb(54, 54, 54);
+    font-weight: 200;
+}
+
+.locality:hover {
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 4px 8px;
+}
+
+.locality .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 15px;
+}
+
+@media (max-width: 800px) {
+    .localities-list {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .locality {
+        width: 100%;
+    }
+
+    .localities .title {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
+    }
+}
